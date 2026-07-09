@@ -1,0 +1,60 @@
+export abstract class Cursos{
+        protected nombre: string;
+        protected precioBase: number;
+        protected duracionHoras: number;
+        
+    constructor(nombre: string, precioBase: number, duracionHoras: number){
+        this.nombre = nombre;
+        this.precioBase = precioBase;
+        this.duracionHoras = duracionHoras;
+    }
+
+    abstract calcularPrecioFinal(): number;
+
+    abstract mostrarBeneficios(): void;
+
+    generarCertificado(): void{
+        console.log(`Certificado generado para el curso por haberlo completado este curso, "${this.nombre}". ` );
+    }
+
+    mostrarIfnormación(): void {
+        console.log("-------------------------------------");
+        console.log(`Curso: ${this.nombre}`);
+        console.log(`Duración: ${this.duracionHoras} horas`);
+        console.log(`Precio final: Q${this.calcularPrecioFinal()}`);
+        this.mostrarBeneficios();
+        console.log("-------------------------------------");
+    }
+}
+
+class CursoGratis extends Cursos{
+    constructor(nombre: string, precioBase: number, duracionHoras: number){
+        super(nombre, 0, duracionHoras);
+    }
+    calcularPrecioFinal(): number {
+        return 0;
+    }
+    mostrarBeneficios(): void {
+        console.log("Beneficios: Acceso a videos básicos, sin certificación oficial. ");
+    }
+}
+class CursoPremium extends Cursos {
+    private descuento: number;
+
+    constructor(nombre: string, precioBase: number, duracionHoras: number, descuento: number = 0){
+        super(nombre, precioBase, duracionHoras);
+        this.descuento = descuento;
+    }
+
+    calcularPrecioFinal(): number {
+        return this.precioBase - this.precioBase * (this.descuento / 100);
+    }
+    
+    mostrarBeneficios(): void {
+        console.log(`Beneficios: Acceso completo, certificación oficial, soporte por email.`);
+    }
+}
+
+class CursoEmpresarial extends Cursos{
+    
+}
