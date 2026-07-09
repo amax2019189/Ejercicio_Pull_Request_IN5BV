@@ -1,0 +1,5 @@
+import { consultaMedica } from "./ConsultaMedica";
+
+
+
+
