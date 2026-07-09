@@ -27,3 +27,21 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+import { Habitacion } from "./ejercicios/ejercicio-11-hoteles/Habitacion";
+import { HabitacionDoble } from "./ejercicios/ejercicio-11-hoteles/HabitacionDoble";
+import { HabitacionSimple } from "./ejercicios/ejercicio-11-hoteles/HabitacionSimple";
+import { Suite } from "./ejercicios/ejercicio-11-hoteles/Suite";
+
+
+const habitaciones: Habitacion[] = [
+    new HabitacionSimple(101, 300),
+    new HabitacionDoble(201, 400),
+    new Suite(301, 800, true)
+];
+
+const noches = 3;
+habitaciones.forEach(h => {
+    h.mostrarInformacion();
+    console.log(`Costo de reserva (${noches} noches): Q${h.calcularCostoReserva(noches)}`);
+});
