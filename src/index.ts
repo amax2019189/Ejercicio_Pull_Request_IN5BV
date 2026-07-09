@@ -1,3 +1,4 @@
+import { Transporte, Bus, Taxi, Metro } from './ejercicios/ejercicio-19-transporte/ejercicio-19';
 /*
     | Ejercicios de Clase |
 
@@ -19,7 +20,26 @@
     16. Sistema de préstamos bancarios
     17. Sistema de restaurantes
     18. Sistema de seguros
-    19. Sistema de transporte público
+    19. Sistema de transporte público*/
+
+    const miBus = new Bus("Bus-1", 50, 5);
+    const miTaxi = new Taxi("Taxi-2", 4, 15, 10);
+    const miMetro = new Metro("Metro-3", 300, 3, 8); 
+    const transportes: Transporte[] = [miBus, miTaxi, miMetro];
+
+    console.log(" ----------------------")
+    console.log(" SISTEMA DE TRANSPORTE ");
+    console.log(" ----------------------")
+
+    transportes.forEach(vehiculo => {
+        vehiculo.mostrarInformacion();
+        vehiculo.iniciarViaje();
+        vehiculo.finalizarViaje();
+        console.log(`Total a cobrar: Q${vehiculo.calcularTarifa()}\n`);
+        console.log(" ----------------------")
+    });
+
+/*
     20. Sistema de mantenimiento técnico
     21. Sistema de facturación
     22. Sistema de clínicas médicas
