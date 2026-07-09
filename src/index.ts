@@ -27,3 +27,25 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+import { TicketPoligrafia } from "./ejercicios/ejercicio-10-tickets/TicketPoligrafia"
+import { TicketReclutamiento } from "./ejercicios/ejercicio-10-tickets/TicketReclutamiento"
+import { TicketRRHH } from "./ejercicios/ejercicio-10-tickets/TicketRRHH"
+import { Ticket } from "./ejercicios/ejercicio-10-tickets/Tickets"
+
+const  tickets: Ticket[] = [
+
+    new TicketReclutamiento(1,"Juan cajchun","cdad quetzal"),
+    new TicketRRHH(10034,"Cristian Perez","Induccion programacional"),
+    new TicketPoligrafia(203,"Jaime Martinez","Alejandro Max","Kinal")
+
+];
+
+tickets.forEach( ticket => {
+    ticket.mostrarInformacion();
+    ticket.procesarFlujo();
+    console.log("esperando dartos...")
+    ticket.cerrarTicket();
+
+    console.log(ticket);
+})
