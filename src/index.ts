@@ -27,3 +27,5 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+//Jefferson Juarez-2025316-ejercicio 9
+console.log("dembele")
