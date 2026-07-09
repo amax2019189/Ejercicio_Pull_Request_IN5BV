@@ -1,3 +1,5 @@
+import PromptSync from "prompt-sync";
+
 /*
     | Ejercicios de Clase |
 
@@ -27,3 +29,9 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+// 20. Jorge Ernesto Alvarez Perez 2025306
+const prompt = PromptSync();
+const name = prompt("Choose sum: ");
+
+console.log(name)
