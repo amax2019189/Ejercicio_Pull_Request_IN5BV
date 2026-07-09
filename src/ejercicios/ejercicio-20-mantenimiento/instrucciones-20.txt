@@ -17,4 +17,4 @@
         - generarReporte(): void
         - mostrarInformacion(): void
 
-    Cada servicio calcula el costo del mantenimiento según el tipo de trabajo realizado.
+    Cada servicio calcula el costo del mantenimiento según el tipo de tra-bajo realizado.
