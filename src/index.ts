@@ -5,9 +5,11 @@
     2. Sistema de pagos con validaciones
     3. Gestión de vehiculos en venta
     4. Inventario con productos especializados
-    5. Sistema de notificaciones multicanal
-    6. Plataforma de cursos online
-    7. Sistema bancario
+    5. Sistema de notificaciones multicanal*/
+   // 6. Plataforma de cursos online
+
+//Aca termina el ejercicio 6 y se agregan los siguientes ejercicios de clase
+   /* 7. Sistema bancario
     8. Videojuego RPG
     9. Sistema de reportes empresariales
     10. Sistema de tickets para visitas empresariales
