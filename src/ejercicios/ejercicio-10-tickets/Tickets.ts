@@ -2,7 +2,7 @@
 export abstract class Ticket {
     constructor(
         public codigo: number,
-        public propietario: string,
+        public visitante: string,
         public lugar: string,
         public estado: string = 'sin expirar'
     ) {}
@@ -16,7 +16,7 @@ export abstract class Ticket {
     }
 
     mostrarInformacion(): void {
-        console.log(`Ticket #${this.codigo} | Propietario: ${this.propietario} | Área: ${this.lugar} | Estado: ${this.estado}`);
+        console.log(`Ticket #${this.codigo} | Visitante: ${this.visitante} | Área: ${this.lugar} | Estado: ${this.estado}`);
     }
 }
  

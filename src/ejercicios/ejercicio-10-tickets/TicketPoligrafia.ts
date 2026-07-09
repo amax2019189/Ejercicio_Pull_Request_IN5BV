@@ -1,8 +1,8 @@
 import { Ticket } from "./Tickets";
  
 export class TicketPoligrafia extends Ticket{
-    constructor(codigo:number, propietario: string, public poligrafo:string, lugar: string, estado: string = "Polograafia"){
-        super(codigo,propietario,lugar);
+    constructor(codigo:number, visitante: string, public poligrafo:string, lugar: string, estado: string = "procesando"){
+        super(codigo,visitante,lugar);
     } 
 
     procesarFlujo(): void {
@@ -20,4 +20,3 @@ export class TicketPoligrafia extends Ticket{
 
     }
 }
-

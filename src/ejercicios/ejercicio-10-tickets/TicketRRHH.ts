@@ -1,8 +1,8 @@
 import { Ticket } from "./Tickets";
 
 export class TicketRRHH extends Ticket{
-    constructor(codigo:number, propietario: string, public motivio: string, lugar: string = "RRHH"){
-        super(codigo,propietario,lugar);
+    constructor(codigo:number, visitante: string, public motivio: string, lugar: string = "RRHH"){
+        super(codigo,visitante,lugar);
     }
 
     procesarFlujo(): void {
@@ -10,13 +10,13 @@ export class TicketRRHH extends Ticket{
     }
 
     cerrarTicket(): void {
-        this.cambiarEstado('Resultado listo')
+        this.cambiarEstado('Asignacion completada')
         console.log(`el Ticket con el codigo ${this.codigo} sera cerrado`)
     }
 
     mostrarInformacion(): void {
         super.mostrarInformacion();
-        console.log(`Examen tipo: Poligrafia | examinador: ${this.poligrafo}`)
+        console.log(`Area asignada: RRHH | Motivo de RRHH: ${this.motivio}`)
 
     }
 }
