@@ -29,3 +29,9 @@
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
+
+//Luis Argueta-2025599-Ejercicio 2
+import PromptSync from "prompt-sync";
+const prompt = PromptSync()
+
+console.log("capi capi capi")
