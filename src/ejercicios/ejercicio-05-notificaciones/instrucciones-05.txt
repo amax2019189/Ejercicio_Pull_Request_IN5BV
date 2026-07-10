@@ -19,4 +19,4 @@
     Métodos extra sugeridos
         - formatearMensaje(mensaje: string): string
     
-    Cada una debe enviar el mensaje de manera distinta.
+    Cada una debe enviar el mensaje de manera distinta
