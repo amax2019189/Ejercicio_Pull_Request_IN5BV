@@ -24,8 +24,18 @@
     19. Sistema de transporte público
     20. Sistema de mantenimiento técnico
     21. Sistema de facturación
-    22. Sistema de clínicas médicas
-    23. Sistema de gimnasio
+    22. Sistema de clínicas médicas|Andres-Gonzalez-2025464
+    */
+    
+  import { ConsultaMedica } from "./ejercicios/ejercicio-22-clinicas/ConsultaMedica";
+
+const consulta1 = new ConsultaMedica("01-01-2026", 
+    "24:00", 
+    "algo caj");
+
+console.log(consulta1);
+
+    /*23. Sistema de gimnasio
     24. Sistema de delivery
     25. Sistema de inscripción estudiantil
 */
