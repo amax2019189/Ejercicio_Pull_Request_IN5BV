@@ -24,6 +24,7 @@
     19. Sistema de transporte público
     20. Sistema de mantenimiento técnico
     21. Sistema de facturación
+    //ANGEL CARDONA-2025228-21
     22. Sistema de clínicas médicas
     23. Sistema de gimnasio
     24. Sistema de delivery
